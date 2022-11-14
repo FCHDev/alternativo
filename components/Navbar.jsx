@@ -109,14 +109,14 @@ const Navbar = () => {
         <g>
         </g>
     </svg>
-    
+
 
     return (
         <div className="shadow-md w-full fixed top-0 left-0">
             <div className="md:flex items-center justify-between bg-white py-2 md:px-10 px-7">
                 <div
-                    className="font-[Sono] font-bold text-3xl cursor-pointer flex items-center text-gray-800">
-                    <span className="text-3xl text-blue-700 mr-10">
+                    className="font-[Sono] font-bold md:text-3xl text-2xl cursor-pointer flex items-center text-gray-800">
+                    <span className="text-3xl text-blue-700 md:mr-10 mr-4">
                         <Image alt="alternativo logo" src={logo} height={50} width={50}></Image>
                     </span>
                     Alternativo

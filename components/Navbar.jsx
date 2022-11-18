@@ -5,11 +5,10 @@ import logo from "../public/images/investment-plant-svgrepo-com.svg"
 const Navbar = () => {
     // MENU ITEMS
     const menu = [
-        {name: "ACCUEIL", link: "/"},
         {name: "QUI NOUS SOMMES", link: "/"},
-        {name: "NOS MISSIONS", link: "#mission"},
-        {name: "NOS VALEURS", link: "/"},
-        {name: "CONTACT", link: "/"},
+        {name: "NOS MISSIONS", link: "/#mission"},
+        {name: "NOS VALEURS", link: "/#valeurs"},
+        {name: "CONTACT", link: "/#contact"},
     ]
 
     // MENU BURGER STATE
@@ -19,7 +18,7 @@ const Navbar = () => {
     const ButtonGetStarted = () => {
         return (
             <button
-                className="bg-[#31bafd] text-white font-[Poppins] py-2 px-6 rounded md:ml-8 hover:bg-blue-300 duration-500">
+                className="bg-[#31bafd] text-white py-2 px-6 rounded md:ml-8 hover:bg-blue-300 duration-500 nav-items">
                 Prenons RDV
             </button>
         )
@@ -115,9 +114,9 @@ const Navbar = () => {
         <div className="shadow-md w-full fixed top-0 left-0">
             <div className="md:flex items-center justify-between bg-white py-2 md:px-10 px-7">
                 <div
-                    className="font-[Sono] font-bold md:text-3xl text-2xl cursor-pointer flex items-center text-gray-800">
+                    className="font-bold md:text-3xl text-2xl cursor-pointer flex items-center text-gray-800 big-title">
                     <span className="text-3xl text-blue-700 md:mr-10 mr-4">
-                        <Image alt="alternativo logo" src={logo} height={50} width={50}></Image>
+                       <a href="/"> <Image alt="alternativo logo" src={logo} height={50} width={50}></Image></a>
                     </span>
                     Alternativo
                 </div>
@@ -133,7 +132,7 @@ const Navbar = () => {
                     {menu.map(item => (
                         <li key={item.name} className="md:ml-8 text-xl md:my0 my-7">
                             <a href={item.link}
-                               className="text-gray-800 hover:text-gray-400 duration-500"
+                               className="text-gray-800 hover:text-gray-400 duration-500 nav-items"
                                onClick={() => {setIsOpen(false)}}
 
                             >{item.name}</a>

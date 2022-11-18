@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Image from 'next/image'
 import logo from "../public/images/investment-plant-svgrepo-com.svg"
+import Link from "next/link";
 
 const Navbar = () => {
     // MENU ITEMS
@@ -116,7 +117,7 @@ const Navbar = () => {
                 <div
                     className="font-bold md:text-3xl text-2xl cursor-pointer flex items-center text-gray-800 big-title">
                     <span className="text-3xl text-blue-700 md:mr-10 mr-4">
-                       <a href="/"> <Image alt="alternativo logo" src={logo} height={50} width={50}></Image></a>
+                       <Link href="/"> <Image alt="alternativo logo" src={logo} height={50} width={50}></Image></Link>
                     </span>
                     Alternativo
                 </div>
@@ -131,11 +132,13 @@ const Navbar = () => {
                     md:pl-0 pl-9 transition-all duration-500 ease-in ${isOpen ? 'top-16 opacity-100' : 'top-[-490px]'} md:opacity-100`}>
                     {menu.map(item => (
                         <li key={item.name} className="md:ml-8 text-xl md:my0 my-7">
-                            <a href={item.link}
-                               className="text-gray-800 hover:text-gray-400 duration-500 nav-items"
-                               onClick={() => {setIsOpen(false)}}
-
-                            >{item.name}</a>
+                            <Link href={item.link}
+                                  className="text-gray-800 hover:text-gray-400 duration-500 nav-items"
+                                  onClick={() => {
+                                      setIsOpen(false)
+                                  }}>
+                                {item.name}
+                            </Link>
                         </li>
                     ))}
                     <ButtonGetStarted/>

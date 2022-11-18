@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 const Nous = () => {
     return (
@@ -27,8 +28,10 @@ const Nous = () => {
                         </div>
                     </div>
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                        <img className="filter object-cover object-center rounded-xl" alt="hero"
-                             src="/images/auremarion2.jpg"/>
+                        <Image className="filter object-cover object-center rounded-xl" alt="hero"
+                             src="/images/auremarion2.jpg"
+                        width={720}
+                        height={600}/>
                     </div>
                 </div>
             </section>

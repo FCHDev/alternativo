@@ -22,13 +22,18 @@ const Missions = () => {
                                 </svg>
                             </div>
                             <div className="flex-grow pl-6">
-                                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Conseiller</h2>
-                                <p className="leading-relaxed text-base paragraphe">Feminist women love Eminem. "Chicka,
-                                    chicka, chicka, Slim Shady, I'm sick of him. Look at him, walkin' around, grabbin'
-                                    his you-know-what. Flippin' the you-know-who," "Yeah, but he's so cute though.".
+                                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+                                    Conseiller
+                                </h2>
+                                <p className="leading-relaxed text-base paragraphe">
+                                    Feminist women love Eminem. Chicka,
+                                    chicka, chicka, Slim Shady, I'm sick of him. Look at him, walkin around, grabbin
+                                    his you-know-what. Flippin the you-know-who,Yeah, but he's so cute though.
                                     Yeah, I probably got a couple of screws up in my head loose. But no worse than
-                                    what's goin' on in your parents' bedrooms.</p>
-                                <a className="mt-3 text-[#32bafe] inline-flex items-center">En savoir plus...
+                                    what's goin on in your parents bedrooms.
+                                </p>
+                                <a className="mt-3 text-[#32bafe] inline-flex items-center">
+                                    En savoir plus...
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
                                          strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -47,12 +52,19 @@ const Missions = () => {
                                 </svg>
                             </div>
                             <div className="flex-grow pl-6">
-                                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Anticiper</h2>
-                                <p className="leading-relaxed text-base paragraphe">What's going through my mind. Half
+                                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+                                    Anticiper
+                                </h2>
+                                <p className="leading-relaxed text-base paragraphe">
+                                    What's going through my mind. Half
                                     the time, when I rhyme, or blowing up like. Bagpipes from Baghdad. Somebody turn the
-                                    vacancy sign on. 'Cause I'm gone, blowing on my. Bagpipes from Baghdad. I run the
-                                    streets. And act like a madman holding a Glad.</p>
-                                <a className="mt-3 text-[#32bafe] inline-flex items-center">En savoir plus...
+                                    vacancy sign on. Cause I'm gone, blowing on my. Bagpipes from Baghdad. I run the
+                                    streets. And act like a madman holding a Glad.
+                                </p>
+                                <a className="mt-3 text-[#32bafe] inline-flex items-center">
+                                    En savoir plus...
+
+
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
                                          strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -70,13 +82,18 @@ const Missions = () => {
                                 </svg>
                             </div>
                             <div className="flex-grow pl-6">
-                                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Orienter</h2>
-                                <p className="leading-relaxed text-base paragraphe">I've created a monster, ‘cause
+                                <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
+                                    Orienter
+                                </h2>
+                                <p className="leading-relaxed text-base paragraphe">
+                                    I've created a monster, cause
                                     nobody wants to. See Marshall no more, they want Shady, I'm chopped liver. Well, if
                                     you want Shady, this is what I'll give ya. A little bit of weed mixed with some hard
                                     liquor. Some vodka that'll jump start my heart quicker. Than a shock when I get
-                                    shocked at the hospital.</p>
-                                <a className="mt-3 text-[#32bafe] inline-flex items-center">En savoir plus...
+                                    shocked at the hospital.
+                                </p>
+                                <a className="mt-3 text-[#32bafe] inline-flex items-center">
+                                    En savoir plus...
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
                                          strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                         <path d="M5 12h14M12 5l7 7-7 7"></path>

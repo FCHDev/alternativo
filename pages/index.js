@@ -8,12 +8,15 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 export default function Home() {
+
+
     return (
         <>
-            <div className="container min-w-full mx-auto flex-col">
+            <div className="container min-w-screen mx-auto flex-col">
                 <Head>
                     <title>Alternativo, conseil gestion patrimoine</title>
                     <meta name="description" content="partenaire gestion conseil finance investissements"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1"/>
                     {/*<link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png"/>*/}
                     <link rel="icon" href="/favicon.ico"/>
 

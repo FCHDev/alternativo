@@ -2,7 +2,7 @@ import React from 'react';
 
 const Missions = () => {
     return (
-        <div id="mission" className="md:mt-0 min-h-screen flex justify-center items-center">
+        <div id="mission" className="md:mt-0 min-h-screen flex justify-center items-center smooth">
             <section className="text-gray-600 body-font">
                 <div className="container px-5 mx-auto">
                     <h1 className="title-font sm:text-4xl text-3xl md:mb-16 mb-10 font-medium text-gray-900 text-center">
@@ -23,9 +23,11 @@ const Missions = () => {
                             </div>
                             <div className="flex-grow pl-6">
                                 <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Conseiller</h2>
-                                <p className="leading-relaxed text-base paragraphe">Bavarian bergkase taleggio jarlsberg. Paneer
-                                    swiss swiss goat hard cheese feta say cheese say cheese. Cheesy grin emmental cheesy
-                                    grin red leicester stilton gouda roquefort squirty cheese. Swiss.</p>
+                                <p className="leading-relaxed text-base paragraphe">Feminist women love Eminem. "Chicka,
+                                    chicka, chicka, Slim Shady, I'm sick of him. Look at him, walkin' around, grabbin'
+                                    his you-know-what. Flippin' the you-know-who," "Yeah, but he's so cute though.".
+                                    Yeah, I probably got a couple of screws up in my head loose. But no worse than
+                                    what's goin' on in your parents' bedrooms.</p>
                                 <a className="mt-3 text-[#32bafe] inline-flex items-center">En savoir plus...
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
                                          strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -46,10 +48,10 @@ const Missions = () => {
                             </div>
                             <div className="flex-grow pl-6">
                                 <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Anticiper</h2>
-                                <p className="leading-relaxed text-base paragraphe">Everyone loves cheese strings blue castello.
-                                    Cheddar fromage st. agur blue cheese manchego emmental cream cheese babybel ricotta.
-                                    Blue castello cheesy feet dolcelatte fromage red leicester jarlsberg port-salut
-                                    gouda. Hard cheese red leicester ricotta port-salut.</p>
+                                <p className="leading-relaxed text-base paragraphe">What's going through my mind. Half
+                                    the time, when I rhyme, or blowing up like. Bagpipes from Baghdad. Somebody turn the
+                                    vacancy sign on. 'Cause I'm gone, blowing on my. Bagpipes from Baghdad. I run the
+                                    streets. And act like a madman holding a Glad.</p>
                                 <a className="mt-3 text-[#32bafe] inline-flex items-center">En savoir plus...
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
                                          strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -69,11 +71,11 @@ const Missions = () => {
                             </div>
                             <div className="flex-grow pl-6">
                                 <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Orienter</h2>
-                                <p className="leading-relaxed text-base paragraphe">Blue bottle crucifix vinyl post-ironic four
-                                    dollar
-                                    toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug
-                                    VHS
-                                    try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
+                                <p className="leading-relaxed text-base paragraphe">I've created a monster, ‘cause
+                                    nobody wants to. See Marshall no more, they want Shady, I'm chopped liver. Well, if
+                                    you want Shady, this is what I'll give ya. A little bit of weed mixed with some hard
+                                    liquor. Some vodka that'll jump start my heart quicker. Than a shock when I get
+                                    shocked at the hospital.</p>
                                 <a className="mt-3 text-[#32bafe] inline-flex items-center">En savoir plus...
                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
                                          strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">

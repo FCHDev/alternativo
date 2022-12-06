@@ -4,12 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     padding: 0;
     margin: 0;
     font-family: 'Prompt', sans-serif;
-    scroll-behavior: smooth;
 }
 
 a {
@@ -37,6 +40,14 @@ a {
 
 .paragraphe {
     font-family: 'Poppins', sans-serif;
+}
+
+.nice-shadow {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.smooth {
+    scroll-behavior: smooth;
 }
 
 

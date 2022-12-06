@@ -2,14 +2,17 @@ import React, {useState} from 'react';
 import Image from 'next/image'
 import logo from "../public/images/investment-plant-svgrepo-com.svg"
 import Link from "next/link";
+// import * as Scroll from 'react-scroll';
+import { Link as LinkScroll} from 'react-scroll'
+
 
 const Navbar = () => {
     // MENU ITEMS
     const menu = [
-        {name: "QUI NOUS SOMMES", link: "/"},
-        {name: "NOS MISSIONS", link: "/#mission"},
-        {name: "NOS VALEURS", link: "/#valeurs"},
-        {name: "CONTACT", link: "/#contact"},
+        {name: "QUI NOUS SOMMES", link: "nous"},
+        {name: "NOS MISSIONS", link: "mission"},
+        {name: "NOS VALEURS", link: "valeurs"},
+        {name: "CONTACT", link: "contact"},
     ]
 
     // MENU BURGER STATE
@@ -18,10 +21,12 @@ const Navbar = () => {
     // CUSTOM BUTTON
     const ButtonGetStarted = () => {
         return (
-            <button
-                className="bg-[#31bafd] text-white py-2 px-6 rounded md:ml-8 hover:bg-blue-300 duration-500 nav-items">
-                Prenons RDV
-            </button>
+            <Link href="https://calendly.com/frnchevalier/test-event" target="_blank" rel="noreferrer">
+                <button
+                    className="bg-[#31bafd] text-white py-2 px-6 rounded md:ml-8 hover:bg-blue-300 duration-50 cursor-pointer">
+                    Prenons RDV
+                </button>
+            </Link>
         )
     }
 
@@ -112,12 +117,12 @@ const Navbar = () => {
 
 
     return (
-        <div className="shadow-md w-full fixed top-0 left-0">
+        <div className="shadow-md w-full fixed top-0 left-0 z-10">
             <div className="md:flex items-center justify-between bg-white py-2 md:px-10 px-7">
                 <div
                     className="font-bold md:text-3xl text-2xl cursor-pointer flex items-center text-gray-800 big-title">
                     <span className="text-3xl text-blue-700 md:mr-10 mr-4">
-                       <Link href="/"> <Image alt="alternativo logo" src={logo} height={50} width={50}></Image></Link>
+                       <LinkScroll to="nous"> <Image alt="alternativo logo" src={logo} height={50} width={50}></Image></LinkScroll>
                     </span>
                     Alternativo
                 </div>
@@ -131,14 +136,19 @@ const Navbar = () => {
                     left-0 w-full md:w-auto
                     md:pl-0 pl-9 transition-all duration-500 ease-in ${isOpen ? 'top-16 opacity-100' : 'top-[-490px]'} md:opacity-100`}>
                     {menu.map(item => (
-                        <li key={item.name} className="md:ml-8 text-xl md:my0 my-7">
-                            <Link href={item.link}
-                                  className="text-gray-800 hover:text-gray-400 duration-500 nav-items"
+                        <li key={item.name} className="md:ml-8 text-xl md:my0 my-7 cursor-pointer">
+                            <LinkScroll to={item.link}
+                                  className="text-gray-800 hover:text-gray-400 duration-500 nav-items active:hover:text-gray-400"
                                   onClick={() => {
                                       setIsOpen(false)
-                                  }}>
+                                  }}
+                                  spy={true}
+                                  smooth={true}
+                                  offset={-50}
+                                  duration={500}
+                            >
                                 {item.name}
-                            </Link>
+                            </LinkScroll>
                         </li>
                     ))}
                     <ButtonGetStarted/>

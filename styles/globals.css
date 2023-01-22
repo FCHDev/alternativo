@@ -4,9 +4,36 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/*COLOURS*/
+.blue-dark {
+    color: #174A5B;
+}
+.blue-light {
+    color: #FFC2C4;
+}
+
+.red-dark {
+    color: #FF585D;
+}
+.red-light {
+    color: #FFC2C4;
+}
+
+
+/*CSS*/
 html {
     scroll-behavior: smooth;
 }
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 
 html,
 body {
@@ -20,9 +47,6 @@ a {
     text-decoration: none;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 .filter {
     -webkit-filter: brightness(110%) contrast(85%) saturate(75%) sepia(22%);
@@ -30,8 +54,27 @@ a {
 }
 
 .big-title {
-    font-family: 'Abril Fatface', cursive;
-    letter-spacing: 1.5px;
+    /*font-family: 'Abril Fatface', cursive;*/
+    /*letter-spacing: 1.5px;*/
+    font-size: 35px;
+    color: #174A5B;
+    font-weight: bold;
+}
+
+.btn-blue {
+    background-color: #174A5B;
+    color: white;
+}
+.btn-blue:hover {
+    background-color: #2D92B4;
+}
+
+.btn-red {
+    background-color: #FF585D;
+    color: white;
+}
+.btn-red:hover {
+    background-color: #FF8589;
 }
 
 .nav-items {
@@ -49,5 +92,11 @@ a {
 .smooth {
     scroll-behavior: smooth;
 }
+
+.avis-quotes {
+    /*max-width: 320px!important;*/
+    margin: 0 auto;
+}
+
 
 

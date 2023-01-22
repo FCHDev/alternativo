@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
 import Image from 'next/image'
-import logo from "../public/images/investment-plant-svgrepo-com.svg"
-import Link from "next/link";
+import logo from "../public/images/logo-alternativo.png"
 // import * as Scroll from 'react-scroll';
-import { Link as LinkScroll} from 'react-scroll'
+import {Link as LinkScroll} from 'react-scroll'
 
 
 const Navbar = () => {
@@ -13,6 +12,7 @@ const Navbar = () => {
         {name: "NOS MISSIONS", link: "mission"},
         {name: "NOS VALEURS", link: "valeurs"},
         {name: "CONTACT", link: "contact"},
+        {name: "AVIS", link: "avis"},
     ]
 
     // MENU BURGER STATE
@@ -21,12 +21,12 @@ const Navbar = () => {
     // CUSTOM BUTTON
     const ButtonGetStarted = () => {
         return (
-            <Link href="https://calendly.com/frnchevalier/test-event" target="_blank" rel="noreferrer">
+            <LinkScroll to="contact">
                 <button
-                    className="bg-[#31bafd] text-white py-2 px-6 rounded md:ml-8 hover:bg-blue-300 duration-50 cursor-pointer">
+                    className="btn-red py-2 px-6 rounded md:ml-8 duration-50 cursor-pointer">
                     Prenons RDV
                 </button>
-            </Link>
+            </LinkScroll>
         )
     }
 
@@ -117,17 +117,17 @@ const Navbar = () => {
 
 
     return (
-        <div className="shadow-md w-full fixed top-0 left-0 z-10">
-            <div className="md:flex items-center justify-between bg-white py-2 md:px-10 px-7">
-                <div
-                    className="font-bold md:text-3xl text-2xl cursor-pointer flex items-center text-gray-800 big-title">
-                    <span className="text-3xl text-blue-700 md:mr-10 mr-4">
-                       <LinkScroll to="nous"> <Image alt="alternativo logo" src={logo} height={50} width={50}></Image></LinkScroll>
-                    </span>
-                    Alternativo
-                </div>
+        <div className="shadow-md fixed top-0 left-0 right-0 z-10">
+            <div className="md:flex items-center justify-between bg-white md:py-2 md:px-10 py-5 px-7">
+                <LinkScroll to="nous">
+                    <Image alt="alternativo logo"
+                           src={logo}
+                           width={200}
+                           className="cursor-pointer">
+                    </Image>
+                </LinkScroll>
                 <div onClick={() => setIsOpen(!isOpen)}
-                     className="text-3xl w-5 absolute right-8 top-6 cursor-pointer md:hidden">
+                     className="text-3xl w-5 absolute right-8 top-5 cursor-pointer md:hidden">
                     {isOpen ? closeBurger : menuBurger}
                 </div>
                 <ul className={`md:flex md:items-center
@@ -138,14 +138,14 @@ const Navbar = () => {
                     {menu.map(item => (
                         <li key={item.name} className="md:ml-8 text-xl md:my0 my-7 cursor-pointer">
                             <LinkScroll to={item.link}
-                                  className="text-gray-800 hover:text-gray-400 duration-500 nav-items active:hover:text-gray-400"
-                                  onClick={() => {
-                                      setIsOpen(false)
-                                  }}
-                                  spy={true}
-                                  smooth={true}
-                                  offset={-50}
-                                  duration={500}
+                                        className="text-[#174A5B] hover:text-gray-400 duration-500 nav-items active:hover:text-gray-400"
+                                        onClick={() => {
+                                            setIsOpen(false)
+                                        }}
+                                        spy={true}
+                                        smooth={true}
+                                        // offset={-50}
+                                        duration={500}
                             >
                                 {item.name}
                             </LinkScroll>

@@ -1,0 +1,41 @@
+{
+  "comments": {
+    "swiper": [
+      {
+        "id": 1,
+        "title": "Formidable !",
+        "author": "Maryse",
+        "city": "Paris",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque, illo unde deserunt! Tempore, nobis! Enim nobis porro dicta odit iure, pariatur veritatis velit nemo hic distinctio!"
+      },
+      {
+        "id": 2,
+        "title": "Les meilleurs, tout simplement.",
+        "author": "Jean-Pierre",
+        "city": "Bordeaux",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque, illo unde deserunt! Tempore, nobis! Enim nobis porro dicta odit iure, pariatur veritatis velit nemo hic distinctio!"
+      },
+      {
+        "id": 3,
+        "title": "J'ai quadruplé mon capital en 3 semaines !",
+        "author": "Childerick",
+        "city": "Bayonne",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis explicabo fugiat fugit obcaecati optio quos ut voluptatem. Dolorem ipsa nulla odio? Autem consequatur dolore earum hic nemo quis quod ratione recusandae unde! Deserunt, impedit itaque? Accusamus alias aliquam asperiores assumenda consequatur cum deleniti deserunt dolore ea earum error exercitationem itaque labore laboriosam nam, nihil non provident quae quia quis repellat, suscipit tempora ullam ut velit vero voluptatibus voluptatum! Officia, quaerat?"
+      },
+      {
+        "id": 4,
+        "title": "20 ans de métier... jamais vu ça !",
+        "author": "Blaise",
+        "city": "Biarritz",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur, cupiditate earum eius error exercitationem fugiat, fugit ipsum iste itaque labore laborum magnam magni maxime neque non pariatur provident quod saepe similique soluta unde?"
+      },
+      {
+        "id": 5,
+        "title": "Alternativo, les experts !",
+        "author": "Lucienne",
+        "city": "Saint-Jean de Luz",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quos mollitia sed quod consectetur at quam dolore praesentium neque eos assumenda iusto nam laborum laboriosam odio blanditiis possimus accusantium recusandae porro exercitationem itaque, illo unde deserunt! Tempore, nobis! Enim nobis porro dicta odit iure, pariatur veritatis velit nemo hic distinctio!"
+      }
+    ]
+  }
+}

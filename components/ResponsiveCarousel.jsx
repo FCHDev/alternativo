@@ -7,26 +7,30 @@ export default function ResponsiveCarousel() {
     console.log(comments)
 
     return (
-        <div className="container px-5 mx-auto mb-10">
+        <div className="px-5 py-3 bg-[#FFEBEB] bg-opacity-80 mx-auto mb-10 max-w-[98vw] h-auto md:max-w-[900px] rounded-2xl">
             <Carousel
-                showArrows={false}
-                autoPlay={true}
-                showStatus={false}
                 infiniteLoop={true}
-                dynamicHeight={false}
+                autoPlay={true}
+                centerMode={true}
+                centerSlidePercentage={100}
+                showArrows={false}
+                showStatus={false}
                 showThumbs={false}
+                showIndicators={false}
+                dynamicHeight={false}
                 emulateTouch={false}
+                stopOnHover={false}
             >
                 {swiper.map((comment) => (
-                    <div key={comment.id} className="avis-quotes max-w-[320px] md:max-w-[900px]">
-                        <h2 className="text-gray-900 text-lg title-font font-medium lg:text-2xl mb-5">
+                    <div key={comment.id} className="avis-quotes">
+                        <h2 className="text-[#174A5B] text-lg title-font font-medium lg:text-2xl mb-5">
                             {comment.title}
                         </h2>
-                        <q className="leading-relaxed my-10 text-base paragraphe lg:text-xl italic">
+                        <q className="leading-relaxed h-max my-10 text-base paragraphe lg:text-xl italic">
                             {comment.text}
                         </q>
-                        <div className="red-dark font-bold mt-5 flex justify-end">{comment.author}</div>
-                        <div className="flex justify-end text-sm font-bold italic">{comment.city}</div>
+                        <div className="flex justify-end red-dark font-bold mt-10">{comment.author}</div>
+                        <div className="flex justify-end text-[#174A5B] text-sm font-bold italic">{comment.city}</div>
                     </div>
                 ))}
             </Carousel>

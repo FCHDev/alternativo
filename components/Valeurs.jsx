@@ -31,7 +31,7 @@ const Valeurs = () => {
                                 </svg>
                             </div>
                             <div className="flex-grow">
-                                <h2 className="text-gray-900 text-lg title-font font-medium mb-3 lg:text-2xl">
+                                <h2 className="text-[#174A5B] text-lg title-font font-medium mb-3 lg:text-2xl">
                                     Proximité
                                 </h2>
                                 <p className="leading-relaxed text-base paragraphe lg:text-xl">
@@ -67,7 +67,7 @@ const Valeurs = () => {
                                 </svg>
                             </div>
                             <div className="flex-grow">
-                                <h2 className="text-gray-900 text-lg title-font font-medium mb-3 lg:text-2xl">
+                                <h2 className="text-[#174A5B] text-lg title-font font-medium mb-3 lg:text-2xl">
                                     Écoute
                                 </h2>
                                 <p className="leading-relaxed text-base paragraphe lg:text-xl">
@@ -97,7 +97,7 @@ const Valeurs = () => {
                                 </svg>
                             </div>
                             <div className="flex-grow">
-                                <h2 className="text-gray-900 text-lg title-font font-medium mb-3 lg:text-2xl">
+                                <h2 className="text-[#174A5B] text-lg title-font font-medium mb-3 lg:text-2xl">
                                     Transparence
                                 </h2>
                                 <p className="leading-relaxed text-base paragraphe lg:text-xl">

@@ -8,7 +8,7 @@ const Nous = () => {
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div
                         className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 items-center text-center">
-                        <h1 className="text-2xl md:text-5xl mb-5 font-bold text-gray-900">
+                        <h1 className="text-2xl md:text-5xl mb-5 font-bold text-[#174A5B]">
                             Experts en <span className="red-dark">gestion de patrimoine</span> <br className="md:block hidden"></br>dans le Sud-Ouest
                         </h1>
                         <p className="mb-8 leading-relaxed paragraphe lg:text-xl">If you could count the skeletons in my

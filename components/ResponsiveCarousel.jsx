@@ -9,13 +9,13 @@ export default function ResponsiveCarousel() {
     return (
         <div className="container px-5 mx-auto mb-10">
             <Carousel
-                showArrows={true}
+                showArrows={false}
                 autoPlay={true}
                 showStatus={false}
-                // showIndicators={true}
                 infiniteLoop={true}
                 dynamicHeight={false}
                 showThumbs={false}
+                emulateTouch={false}
             >
                 {swiper.map((comment) => (
                     <div key={comment.id} className="avis-quotes max-w-[320px] md:max-w-[900px]">

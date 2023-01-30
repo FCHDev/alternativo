@@ -2,6 +2,9 @@ import React from 'react';
 import ResponsiveCarousel from "./ResponsiveCarousel";
 
 const Avis = () => {
+
+    // const [advices, setAdvices] = useState([]);
+
     return (
         <div id="avis" className="md:mt-0 min-h-screen flex justify-center items-center smooth mb-14 md:mb-0">
             <section className="text-gray-600 body-font">

@@ -9,6 +9,8 @@ import Avis from "../components/Avis";
 
 export default function Home() {
 
+    console.log("Rendu de l'Index")
+
     return (
         <div className="relative">
             <div className="container mx-auto flex-col overflow-x-clip">

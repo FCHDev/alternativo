@@ -21,6 +21,7 @@ const Nous = () => {
                             Et parce que la gestion financière n'est pas qu'une question d'argent, nous mettons la relation humaine au centre de nos échanges.
                         </p>
                     </div>
+{/*prout*/}
 
                     <div className="lg:max-w-lg lg:w-full md:w-2/3 w-full overflow-hidden mb-5 md:mb-0">
                         <Image className="filter object-cover object-center rounded-xl"

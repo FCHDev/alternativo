@@ -1,6 +1,6 @@
 import React from 'react';
 import piggy from "../public/images/piggy.jpg";
-import dream from "../public/images/dream.jpg";
+import dream from "../public/images/heaven.jpeg";
 import advisorySVG from "../public/SVG/financial-advisor.svg";
 import dreamingSVG from "../public/SVG/dream.svg";
 import Image from "next/image";

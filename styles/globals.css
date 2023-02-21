@@ -53,8 +53,8 @@ a {
 
 
 .filter {
-    -webkit-filter: brightness(110%) contrast(85%) saturate(75%) sepia(22%);
-    filter: brightness(110%) contrast(85%) saturate(75%) sepia(22%);
+    -webkit-filter: brightness(110%) contrast(85%) saturate(75%) sepia(10%);
+    filter: brightness(110%) contrast(85%) saturate(75%) sepia(10%);
 }
 
 .big-title {

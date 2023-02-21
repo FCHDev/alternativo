@@ -1,123 +1,124 @@
 import React from 'react';
 import Image from "next/image";
+import accessibility from "../public/SVG/accessibility.svg";
+import confidential from "../public/SVG/confidential.svg";
+import responsible from "../public/SVG/responsibility.svg";
+import available from "../public/SVG/availability.svg";
+import simple from "../public/SVG/simplicity.svg";
+import respect from "../public/SVG/respect.svg";
 
 const Valeurs = () => {
+
+    const valeurs1 = [
+        {
+            id: 1,
+            icon: accessibility,
+            title: "Accessibilité",
+            text: "Pour une entreprise de conseil en gestion de patrimoine, l'accessibilité signifie être facilement accessible et disponible pour ses clients. Cela peut inclure des moyens de communication pratiques, des horaires de bureau étendus, des services en ligne accessibles et des interactions personnalisées avec les conseillers financiers."
+        },
+        {
+            id: 2,
+            icon: confidential,
+            title: "Confidentialité",
+            text: "La confidentialité est un élément clé de la relation de confiance entre un conseiller en gestion de patrimoine et son client. Les clients doivent être assurés que leurs informations financières et personnelles sont conservées en toute sécurité et protégées contre les risques de violation de la vie privée."
+        },
+        {
+            id: 3,
+            icon: responsible,
+            title: "Responsabilité",
+            text: "La responsabilité est un élément essentiel de la prestation de services de conseil en gestion de patrimoine. Les conseillers doivent être tenus responsables de leurs actions et de leur performance pour les clients qu'ils servent, en s'assurant de respecter les normes éthiques, juridiques et professionnelles."
+        }
+    ]
+    const valeurs2 = [
+        {
+            id: 4,
+            icon: available,
+            title: "Disponibilité",
+            text: "Les clients ont souvent besoin d'une assistance rapide et réactive de la part de leur conseiller en gestion de patrimoine. Les conseillers doivent être disponibles pour répondre aux demandes de leurs clients, en fournissant des informations et des conseils utiles en temps opportun."
+        },
+        {
+            id: 5,
+            icon: simple,
+            title: "Simplicité",
+            text: "La gestion de patrimoine peut être un sujet complexe, avec de nombreux détails et des termes techniques. Les conseillers doivent être en mesure de communiquer des informations financières complexes de manière simple et compréhensible pour leurs clients, en simplifiant les concepts complexes et en offrant des options de gestion de patrimoine simples."
+        },
+        {
+            id: 6,
+            icon: respect,
+            title: "Respect",
+            text: "Le respect est une valeur fondamentale pour toute entreprise de conseil en gestion de patrimoine. Les conseillers doivent respecter les souhaits et les objectifs de leurs clients, en tenant compte de leur tolérance au risque, de leur horizon de placement et de leur situation financière. Les clients doivent être traités avec respect et dignité, indépendamment de leur patrimoine ou de leur situation personnelle."
+        }
+    ]
+
+
     return (
         <div id="valeurs" className="mt-10 md:mt-24 min-h-screen flex justify-center items-center">
             <section className="text-gray-600 body-font">
-                <h1 className="sm:text-4xl text-3xl font-medium text-center mb-10 pt-20 md:pt-0">
+                {/*TITRE*/}
+                <h1 className="sm:text-4xl text-3xl font-medium text-center mb-5 sm:mb-10 pt-20 md:pt-0">
                         <span className="font-bold red-dark">
                             Nos valeurs
                         </span>
                     <br className="md:hidden lg:inline-block"/>
                 </h1>
+
                 <div className="container px-5 mx-auto flex flex-wrap">
 
-                    <div className="lg:w-1/2 w-full lg:mb-0 rounded-lg overflow-hidden">
+                    {/*PARTIE 1*/}
+                    <div
+                        className="flex flex-col flex-wrap lg:py-6 -mb-10 md:mt-0 mt-5 lg:w-1/3 lg:pr-12 lg:text-left text-center">
+                        {valeurs1.map((item) =>
+                            <div key={item.id} className="md:h-[330px] 2xl:h-[280px] flex flex-col mb-10 lg:items-start items-center">
+                                <div className="flex-grow">
+                                    <div className="flex items-center">
+                                        <div
+                                            className="w-12 h-12 flex items-center justify-center rounded-full bg-[#174A5B] mb-5 mr-3">
+                                            <Image className="h-7 w-auto" src={item.icon} alt={item.title}/>
+                                        </div>
+                                        <h2 className="text-[#174A5B] text-lg title-font font-medium mb-3 lg:text-2xl">
+                                            {item.title}
+                                        </h2>
+                                    </div>
+                                    <p className="text-start sm:leading-relaxed text-base paragraphe lg:text-lg">
+                                        {item.text}
+                                    </p>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+
+                    {/*IMAGE*/}
+                    <div className="flex justify-center lg:w-1/3 w-full lg:mb-0 my-5 sm:my-0 rounded-lg overflow-hidden">
                         <Image alt="feature"
-                               className="object-cover object-center md:h-full sm:h-[800] w-[736] rounded-lg my-auto"
+                               className="object-cover object-center md:h-5/6 sm:h-[800] w-[736] rounded-lg my-auto"
                                src="/images/playa.jpg"
                                width={920}
                                height={1000}/>
                     </div>
+
+                    {/*PARTIE 2*/}
                     <div
-                        className="flex flex-col flex-wrap lg:py-6 -mb-10 md:mt-0 mt-5 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-                        <div className="flex flex-col mb-10 lg:items-start items-center">
-                            <div
-                                className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-[#FFC2C4] text-[#FF585D] mb-5">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
-                                     strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
-                                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                                </svg>
+                        className="flex flex-col flex-wrap h-full lg:py-6 -mb-10 md:mt-0 mt-5 lg:w-1/3 lg:pl-12 lg:text-left text-center">
+                        {valeurs2.map((item) =>
+                            <div key={item.id} className="md:h-[330px] 2xl:h-[280px] flex flex-col mb-10 lg:items-start items-center">
+                                <div className="flex-grow">
+                                    <div className="flex items-center">
+                                        <div
+                                            className="w-12 h-12 flex items-center justify-center rounded-full bg-[#174A5B] mb-5 mr-3">
+                                            <Image className="h-7 w-auto" src={item.icon} alt={item.title}/>
+                                        </div>
+                                        <h2 className="text-[#174A5B] text-lg title-font font-medium mb-3 lg:text-2xl">
+                                            {item.title}
+                                        </h2>
+                                    </div>
+                                    <p className="text-start sm:leading-relaxed text-base paragraphe lg:text-lg">
+                                        {item.text}
+                                    </p>
+                                </div>
                             </div>
-                            <div className="flex-grow">
-                                <h2 className="text-[#174A5B] text-lg title-font font-medium mb-3 lg:text-2xl">
-                                    Proximité
-                                </h2>
-                                <p className="leading-relaxed text-base paragraphe lg:text-xl">
-                                    I’m the American Dream. I’m the
-                                    definiton of white trash ballin’. I’m right back on 'em. With a (chicka chicka
-                                    chicka) I can’t call it. Same shit, different toilet. Oh, you got a nice ass,
-                                    darling. Can’t wait to get you into my Benz, take you for a spin. What you mean we
-                                    ain't fuckin’? You take me for a friend?. Let me tell you the whole story of Shady’s
-                                    origin.
-                                    Feminist women love Eminem. "Chicka, chicka, chicka, Slim Shady, I'm sick of him.
-                                    Look at him, walkin' around, grabbin' his you-know-what. Flippin' the you-know-who,"
-                                    "Yeah, but he's so cute though.". Yeah, I probably got a couple of screws up in my
-                                    head loose. But no worse than what's goin' on in your parents' bedrooms.
-                                </p>
-                                <a className="red-dark mt-3 inline-flex items-center">
-                                    En savoir plus...
-                                    <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                         strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2"
-                                         viewBox="0 0 24 24">
-                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="flex flex-col mb-10 lg:items-start items-center">
-                            <div
-                                className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-[#FFC2C4] text-[#FF585D] mb-5">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
-                                     strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
-                                    <circle cx="6" cy="6" r="3"></circle>
-                                    <circle cx="6" cy="18" r="3"></circle>
-                                    <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-                                </svg>
-                            </div>
-                            <div className="flex-grow">
-                                <h2 className="text-[#174A5B] text-lg title-font font-medium mb-3 lg:text-2xl">
-                                    Écoute
-                                </h2>
-                                <p className="leading-relaxed text-base paragraphe lg:text-xl">
-                                    So bad, I’m so good that I’m so bad.
-                                    Guarantee I’ll be the greatest thing you ever had. ‘Cause you ain't never met nobody
-                                    like me. And you ain't gonna wanna fuck nobody else again. I'ma make you learn to
-                                    appreciate me, differentiate me. From these phony, little fishy and sissy fake G’s.
-                                    Skip over the "huggy bear," and all the "kissy face," please.
-                                </p>
-                                <a className="red-dark mt-3 inline-flex items-center">
-                                    En savoir plus...
-                                    <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                         strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2"
-                                         viewBox="0 0 24 24">
-                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="flex flex-col mb-10 lg:items-start items-center">
-                            <div
-                                className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-[#FFC2C4] text-[#FF585D] mb-5">
-                                <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"
-                                     strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
-                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg>
-                            </div>
-                            <div className="flex-grow">
-                                <h2 className="text-[#174A5B] text-lg title-font font-medium mb-3 lg:text-2xl">
-                                    Transparence
-                                </h2>
-                                <p className="leading-relaxed text-base paragraphe lg:text-xl">
-                                    Swiss cheesy grin cheddar. Cheese on
-                                    toast
-                                    stinking bishop cheese triangles mozzarella cream cheese babybel mozzarella
-                                    dolcelatte. Cut the cheese taleggio cheesecake brie hard cheese stinking bishop
-                                    jarlsberg lancashire. Boursin cheeseburger.
-                                </p>
-                                <a className="red-dark mt-3 inline-flex items-center">
-                                    En savoir plus...
-                                    <svg fill="none" stroke="currentColor" strokeLinecap="round"
-                                         strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2"
-                                         viewBox="0 0 24 24">
-                                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
+                        )}
                     </div>
+
                 </div>
             </section>
         </div>

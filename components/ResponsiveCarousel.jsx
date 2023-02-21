@@ -29,7 +29,7 @@ export default function ResponsiveCarousel() {
 
     return (
         <div
-            className="flex flex-col justify-center px-5 py-3 bg-[#FFEBEB] bg-opacity-80 mx-auto mb-10 max-w-[98vw] h-auto md:h-[460px] md:max-w-[900px] rounded-2xl">
+            className="flex flex-col justify-center px-5 py-3 bg-[#FFEBEB] bg-opacity-80 sm:bg-white mx-auto mb-10 max-w-[98vw] h-auto md:h-[460px] md:max-w-[900px] rounded-2xl">
             <Carousel
                 infiniteLoop={true}
                 autoPlay={autoPlay}

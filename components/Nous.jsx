@@ -12,18 +12,14 @@ const Nous = () => {
                             Experts en <span className="red-dark">gestion de patrimoine</span> <br
                             className="md:block hidden"></br>dans le Sud-Ouest
                         </h1>
-                        <p className="mb-8 leading-relaxed paragraphe lg:text-xl">If you could count the skeletons in my
-                            closet.
-                            Under my bed and up under my faucet. Then you would know I've completely lost it. Is he
-                            nuts? No, he's insane. If you could count the skeletons in my closet. Under my bed and up
-                            under my faucet. Then you would know I've completely lost it. Is he nuts? No, he's
-                            insane.Bagpipes from Baghdad..</p>
-                        <p className="mb-8 leading-relaxed paragraphe lg:text-xl md:block hidden">Calm down, Marty, I
-                            didn’t
-                            disintegrate anything. The molecular structure of Einstein and the car are completely
-                            intact. Marty you gotta come back with me. Of course, from a group of Libyan Nationalists.
-                            They wanted me to build them a bomb, so I took their plutonium and in turn gave them a shiny
-                            bomb case full of used pinball machine parts. Yoo. Yoo.</p>
+                        <p className="mb-8 leading-relaxed paragraphe lg:text-xl">
+                            Alternativo est un cabinet de conseil en investissements et en gestion de patrimoine créée en 2019 à Bordeaux, dans le quartier des Chartrons.
+                            Aujourd’hui nichée au cœur du Pays Basque, cette société familiale a pour but d'accompagner ses clients à faire leurs propres choix financiers en fonction de leurs projets de vie : création ou développement d’un patrimoine, optimisation fiscale.</p>
+                        <p className="mb-8 leading-relaxed paragraphe lg:text-xl md:block hidden">
+                            Chez Alternativo, nous avons à cœur de démocratiser la gestion patrimoniale.
+                            C'est la raison pour laquelle nous pratiquons un conseil avisé mais décomplexé.
+                            Et parce que la gestion financière n'est pas qu'une question d'argent, nous mettons la relation humaine au centre de nos échanges.
+                        </p>
                     </div>
 
                     <div className="lg:max-w-lg lg:w-full md:w-2/3 w-full overflow-hidden mb-5 md:mb-0">

@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className="absolute bottom-0 w-full md:h-20 max-h-6">
             <footer className="bg-[#174A5B]">
-                <div className="container px-5 md:py-8 py-5 mx-auto flex items-center sm:flex-row flex-col">
+                <div className="container px-5 md:py-8 py-5 mx-auto flex items-center sm:flex-row flex-col">f
                     <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                         <Image alt="alternativo logo" src={logo} width={200}/>
                     </a>

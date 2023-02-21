@@ -155,7 +155,7 @@ const Post = () => {
             </button>
 
             {/*APERCU DES COMMENTAIRES*/}
-            <div className="hidden md:block w-1/2">
+            <div className="hidden md:block">
                 <div className="sm:flex sm:items-center">
                     <div className="sm:flex-auto">
                         <h1 className="text-xl md:text-2xl font-semibold text-[#174A5B]">Avis</h1>

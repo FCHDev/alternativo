@@ -20,28 +20,28 @@ export default function Cgu() {
                     <h1 className="text-xl sm:text-2xl 2xl:text-4xl pb-5 red-dark font-bold">
                         Conditions Générales d'Utilisation
                     </h1>
-                    <p className="pb-5 sm:text-lg 2xl:text-xl">
-                        Le site 'www.alternativo.fr' est proposé par la société ALTERNATIVO. L'utilisation de ce site est
+                    <p className="pb-5 2xl:text-xl">
+                        Le site 'www.alternativo.fr' est proposé par la société <strong className="font-bold red-dark">ALTERNATIVO</strong>. L'utilisation de ce site est
                         soumise aux présentes conditions générales d'utilisation. <br/>
                         L'utilisateur reconnaît avoir pris connaissance de ces conditions générales et s'engage à les
                         respecter.
                     </p>
-                    <p className="pb-5 sm:text-lg 2xl:text-xl">
-                        La société ALTERNATIVO met tout en œuvre pour assurer l'exactitude et la mise à jour des informations diffusées sur le site 'www.alternativo.fr', mais ne peut garantir l'absence d'erreurs ou d'omissions.
+                    <p className="pb-5 2xl:text-xl">
+                        La société <strong className="font-bold red-dark">ALTERNATIVO</strong> met tout en œuvre pour assurer l'exactitude et la mise à jour des informations diffusées sur le site 'www.alternativo.fr', mais ne peut garantir l'absence d'erreurs ou d'omissions.
                     </p>
-                    <p className="pb-5 sm:text-lg 2xl:text-xl">
-                        La société ALTERNATIVO décline toute responsabilité quant à l'utilisation qui pourrait être faite des informations contenues sur le site 'www.alternativo.fr'.
+                    <p className="pb-5 2xl:text-xl">
+                        La société <strong className="font-bold red-dark">ALTERNATIVO</strong> décline toute responsabilité quant à l'utilisation qui pourrait être faite des informations contenues sur le site 'www.alternativo.fr'.
                     </p>
-                    <p className="pb-5 sm:text-lg 2xl:text-xl">
-                        Le site 'www.alternativo.fr' peut contenir des liens vers des sites tiers. La société ALTERNATIVO ne peut être tenue pour responsable du contenu de ces sites ni des éventuels préjudices qu'ils pourraient causer.
+                    <p className="pb-5 2xl:text-xl">
+                        Le site 'www.alternativo.fr' peut contenir des liens vers des sites tiers. La société <strong className="font-bold red-dark">ALTERNATIVO</strong> ne peut être tenue pour responsable du contenu de ces sites ni des éventuels préjudices qu'ils pourraient causer.
                     </p>
-                    <p className="pb-5 sm:text-lg 2xl:text-xl">
-                        La société ALTERNATIVO se réserve le droit de modifier à tout moment et sans préavis les présentes conditions générales d'utilisation. Les utilisateurs sont invités à consulter régulièrement les présentes conditions.
+                    <p className="pb-5 2xl:text-xl">
+                        La société <strong className="font-bold red-dark">ALTERNATIVO</strong> se réserve le droit de modifier à tout moment et sans préavis les présentes conditions générales d'utilisation. Les utilisateurs sont invités à consulter régulièrement les présentes conditions.
                     </p>
-                    <p className="pb-5 sm:text-lg 2xl:text-xl">
-                        Toute reproduction, représentation, modification, publication, transmission, totale ou partielle du site 'www.alternativo.fr', sans l'autorisation préalable et écrite de la société ALTERNATIVO, est strictement interdite et constitutive d'une contrefaçon sanctionnée par les articles L. 335-2 et suivants du Code de la propriété intellectuelle.
+                    <p className="pb-5 2xl:text-xl">
+                        Toute reproduction, représentation, modification, publication, transmission, totale ou partielle du site 'www.alternativo.fr', sans l'autorisation préalable et écrite de la société <strong className="font-bold red-dark">ALTERNATIVO</strong>, est strictement interdite et constitutive d'une contrefaçon sanctionnée par les articles L. 335-2 et suivants du Code de la propriété intellectuelle.
                     </p>
-                    <p className="pb-5 mb-3 sm:text-lg 2xl:text-xl">
+                    <p className="pb-5 mb-3 2xl:text-xl">
                         Les présentes conditions générales d'utilisation sont régies par le droit français. Tout litige relatif à l'utilisation du site 'www.alternativo.fr' sera soumis à la compétence exclusive des tribunaux français.
                     </p>
 

@@ -9,12 +9,18 @@
 .blue-dark {
     color: #174A5B;
 }
+.bg-blue-dark {
+    background-color: #174A5B;
+}
 .blue-light {
     color: #FFC2C4;
 }
 
 .red-dark {
     color: #FF585D;
+}
+.bg-red-dark {
+    background-color: #FF585D;
 }
 .red-light {
     color: #FFC2C4;
@@ -105,9 +111,6 @@ a {
         background-image: none;
     }
 }
-/*.carousel {*/
-/*    height: 35rem;*/
-/*}*/
 
 
 

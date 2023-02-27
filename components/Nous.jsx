@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Nous = () => {
     return (
-        <div className="md:mt-0 min-h-screen flex justify-center items-center" id="nous">
+        <div className="xl:pt-16 min-h-screen flex justify-center items-center" id="nous">
             <section className="text-gray-600 body-font">
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div

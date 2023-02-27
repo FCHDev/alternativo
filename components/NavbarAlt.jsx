@@ -1,19 +1,17 @@
 import React, {useState} from 'react';
 import Image from 'next/image'
 import logo from "../public/images/logo-alternativo.png"
-// import * as Scroll from 'react-scroll';
-import {Link as LinkScroll} from 'react-scroll'
 import Link from "next/link";
 
 
-const Navbar = () => {
+const NavbarAlt = () => {
     // MENU ITEMS
     const menu = [
-        {name: "QUI NOUS SOMMES", link: "nous"},
-        {name: "NOS MISSIONS", link: "mission"},
-        {name: "NOS VALEURS", link: "valeurs"},
-        {name: "CONTACT", link: "contact"},
-        {name: "AVIS", link: "avis"},
+        {name: "QUI NOUS SOMMES", link: "/#nous"},
+        {name: "NOS MISSIONS", link: "/#mission"},
+        {name: "NOS VALEURS", link: "/#valeurs"},
+        {name: "CONTACT", link: "/#contact"},
+        {name: "AVIS", link: "/#avis"},
     ]
 
     // MENU BURGER STATE
@@ -22,12 +20,12 @@ const Navbar = () => {
     // CUSTOM BUTTON
     const ButtonGetStarted = () => {
         return (
-            <LinkScroll to="contact">
+            <Link href="/#contact">
                 <button
                     className="btn-red py-2 px-6 rounded md:ml-8 duration-50 cursor-pointer">
                     Prenons RDV
                 </button>
-            </LinkScroll>
+            </Link>
         )
     }
 
@@ -137,18 +135,18 @@ const Navbar = () => {
                     md:pl-0 pl-9 transition-all duration-500 ease-in ${isOpen ? 'top-16 opacity-100' : 'top-[-490px]'} md:opacity-100`}>
                     {menu.map(item => (
                         <li key={item.name} className="md:ml-8 text-xl md:text-base lg:text-xl md:my-3 my-7 cursor-pointer">
-                            <LinkScroll to={item.link}
+                            <Link href={item.link}
                                         className="text-[#174A5B] hover:text-gray-400 duration-500 nav-items active:hover:text-gray-400"
                                         onClick={() => {
                                             setIsOpen(false)
                                         }}
                                         spy={true}
                                         smooth={true}
-                                        // offset={-50}
+                                // offset={-50}
                                         duration={500}
                             >
                                 {item.name}
-                            </LinkScroll>
+                            </Link>
                         </li>
                     ))}
                     <ButtonGetStarted/>
@@ -159,4 +157,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default NavbarAlt;

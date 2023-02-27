@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Missions = () => {
     return (
-        <div id="mission" className="md:mt-0 min-h-screen flex justify-center items-center smooth mb-14 md:mb-0">
+        <div id="mission" className="2xl:pt-10 pt-8 md:pt-4 lg:pt-16 xl:pt-0 min-h-screen flex justify-center items-center">
             <section className="text-gray-600 body-font">
                 <div className="container px-5 mx-auto">
                     <h1 className="sm:text-4xl text-3xl font-medium text-center sm:mb-10 pt-20 md:pt-0">
@@ -18,7 +18,7 @@ const Missions = () => {
                     </h1>
 
                     <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-                        <div className="p-4 md:w-full flex flex-col md:flex-row mt-10">
+                        <div className="p-4 md:w-full flex flex-col lg:flex-row mt-10">
 
                             <div className="md:w-1/2 flex flex-col sm:h-[350px] items-center mb-10 sm:mb-0">
                                 <Image className="h-full w-auto mb-5 sm:mb-10 rounded-xl object-cover filter" src={piggy} alt="cochon"/>

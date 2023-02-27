@@ -1,27 +1,30 @@
 import React from 'react';
 import logo from "../public/images/logo-bgremoved-white.png"
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
     return (
-        <div className="absolute bottom-0 w-full md:h-20 max-h-6">
-            <footer className="bg-[#174A5B]">
-                <div className="container px-5 md:py-8 py-5 mx-auto flex items-center sm:flex-row flex-col">f
-                    <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <div className="hidden sm:block absolute bottom-0 w-full">
+            <footer className="bg-[#174A5B] min-h-full">
+                <div className="container px-5 md:py-8 py-5 mx-auto flex items-center sm:flex-row flex-col">
+                    <Link href="/" className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                         <Image alt="alternativo logo" src={logo} width={200}/>
-                    </a>
+                    </Link>
                     <p className="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 paragraphe">
-                        <a href="https://google.com" className="ml-1" rel="noopener noreferrer"
-                           target="_blank">Conditions générales</a>
+                        <Link  href="/cgu" className="ml-1">
+							Conditions générales
+						</Link>
                     </p>
 					<p className="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 paragraphe">
-						<a href="https://google.com" className="ml-1" rel="noopener noreferrer"
-						   target="_blank">Mentions légales</a>
+						<Link href="/mentions" className="ml-1">
+							Mentions légales
+						</Link>
 					</p>
 					<p className="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 paragraphe">©
 						2022 Alternativo —
-						<a href="https://google.com" className="ml-1" rel="noopener noreferrer"
-						   target="_blank">@fchevalier</a>
+						<Link href="https://fchevalier.com" className="ml-1" rel="noopener noreferrer"
+						   target="_blank">@fchevalier</Link>
 					</p>
 
 					{/*ICONES RESEAUX SOCIAUX*/}

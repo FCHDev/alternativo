@@ -52,10 +52,10 @@ const Valeurs = () => {
 
 
     return (
-        <div id="valeurs" className="mt-10 md:mt-24 min-h-screen flex justify-center items-center">
+        <div id="valeurs" className="2xl:pt-10 pt-20 lg:pt-16 xl:pt-24 2xl:pt-32 min-h-screen flex justify-center items-center">
             <section className="text-gray-600 body-font">
                 {/*TITRE*/}
-                <h1 className="sm:text-4xl text-3xl font-medium text-center mb-5 sm:mb-10 pt-20 md:pt-0">
+                <h1 className="sm:text-4xl text-3xl font-medium text-center mb-5 sm:mb-10">
                         <span className="font-bold red-dark">
                             Nos valeurs
                         </span>

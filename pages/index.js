@@ -1,12 +1,10 @@
 import Head from 'next/head'
 import Missions from "../components/Missions";
 import Nous from "../components/Nous";
-import Valeurs from "../components/Valeurs";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Avis from "../components/Avis";
-import Vision from "../components/Vision";
 
 export default function Home() {
 
@@ -29,8 +27,6 @@ export default function Home() {
                 <Navbar/>
                 <Nous/>
                 <Missions/>
-                <Vision/>
-                <Valeurs/>
                 <Contact/>
                 <Avis/>
             </div>

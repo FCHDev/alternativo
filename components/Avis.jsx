@@ -11,7 +11,7 @@ const Avis = () => {
                             Ils nous font confiance...
                     </h2>
                     <div className="2xl:mb-20 md:mb-10 mb-5 mt-1 border border-opacity-50 border-[#174A5B] rounded-xl py-1 px-4 md:text-xl text-[#174A5B]">
-                        Taux de recommandation clients : <span className="font-bold font-mono text-[#FF585D]">98%</span>
+                        Taux de satisfaction clients : <span className="font-bold font-mono text-[#FF585D]">98%</span>
                     </div>
 
                     <ResponsiveCarousel />

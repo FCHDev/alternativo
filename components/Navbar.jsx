@@ -9,11 +9,10 @@ import Link from "next/link";
 const Navbar = () => {
     // MENU ITEMS
     const menu = [
-        {name: "QUI NOUS SOMMES", link: "nous"},
-        {name: "NOS MISSIONS", link: "mission"},
-        {name: "NOS VALEURS", link: "valeurs"},
+        {name: "QUI SOMMES-NOUS ?", link: "nous"},
+        {name: "NOTRE ENGAGEMENT", link: "mission"},
         {name: "CONTACT", link: "contact"},
-        {name: "AVIS", link: "avis"},
+        {name: "TÉMOIGNAGES", link: "avis"},
     ]
 
     // MENU BURGER STATE
@@ -26,6 +25,17 @@ const Navbar = () => {
                 <button
                     className="btn-red py-2 px-6 rounded md:ml-8 duration-50 cursor-pointer">
                     Prenons RDV
+                </button>
+            </LinkScroll>
+        )
+    }
+
+    const ButtonGetStartedMobile = () => {
+        return (
+            <LinkScroll to="contact">
+                <button
+                    className="btn-red py-2 px-6 rounded md:ml-8 duration-50 cursor-pointer">
+                    RDV
                 </button>
             </LinkScroll>
         )
@@ -119,24 +129,36 @@ const Navbar = () => {
     return (
         <div className="shadow-md fixed top-0 left-0 right-0 z-10">
             <div className="md:flex items-center justify-between bg-white md:py-2 md:px-10 py-5 px-7 z-10">
-                <Link href="/">
-                    <Image alt="alternativo logo"
-                           src={logo}
-                           width={200}
-                           className="cursor-pointer w-[200px] md:w-[250px] z-10 mx-0">
-                    </Image>
-                </Link>
+                {/*LOGO ET BOUTON RDV MOBILE*/}
+                <div className="flex items-center">
+                    <Link href="/">
+                        <Image alt="alternativo logo"
+                               src={logo}
+                               width={200}
+                               className="cursor-pointer w-[160px] md:w-[250px] z-10 mx-0">
+                        </Image>
+                    </Link>
+
+                    <div className="flex pl-5 md:hidden">
+                        <ButtonGetStartedMobile/>
+                    </div>
+                </div>
+
+
+                {/*MENU BURGER*/}
                 <div onClick={() => setIsOpen(!isOpen)}
-                     className="text-3xl w-8 absolute right-8 top-3 sm:top-5 cursor-pointer md:hidden z-20">
+                     className="text-3xl w-8 absolute right-8 top-5 cursor-pointer md:hidden z-20">
                     {isOpen ? closeBurger : menuBurger}
                 </div>
+
                 <ul className={`md:flex md:items-center
                     md:pb-0 pb-12 absolute md:static
                     bg-white md:z-auto z-[-1]
                     left-0 w-full md:w-auto
                     md:pl-0 pl-9 transition-all duration-500 ease-in ${isOpen ? 'top-16 opacity-100' : 'top-[-490px]'} md:opacity-100`}>
                     {menu.map(item => (
-                        <li key={item.name} className="md:ml-8 text-xl md:text-base lg:text-xl md:my-3 my-7 cursor-pointer">
+                        <li key={item.name}
+                            className="md:ml-8 text-xl md:text-base lg:text-xl md:my-3 my-7 cursor-pointer">
                             <LinkScroll to={item.link}
                                         className="text-[#174A5B] hover:text-gray-400 duration-500 nav-items active:hover:text-gray-400"
                                         onClick={() => {
@@ -144,19 +166,22 @@ const Navbar = () => {
                                         }}
                                         spy={true}
                                         smooth={true}
-                                        // offset={-50}
+                                // offset={-50}
                                         duration={500}
                             >
                                 {item.name}
                             </LinkScroll>
                         </li>
                     ))}
-                    <ButtonGetStarted/>
+                    <div className="hidden md:flex">
+                        <ButtonGetStarted/>
+                    </div>
                 </ul>
             </div>
 
         </div>
-    );
+    )
+        ;
 };
 
 export default Navbar;

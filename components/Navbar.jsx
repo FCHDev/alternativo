@@ -160,7 +160,7 @@ const Navbar = () => {
                         <li key={item.name}
                             className="md:ml-8 text-xl md:text-base lg:text-xl md:my-3 my-7 cursor-pointer">
                             <LinkScroll to={item.link}
-                                        className="text-[#174A5B] hover:text-gray-400 duration-500 nav-items active:hover:text-gray-400"
+                                        className="text-[#174A5B] hover:text-gray-400 duration-500 nav-items active:hover:text-gray-400 cursor-pointer"
                                         onClick={() => {
                                             setIsOpen(false)
                                         }}

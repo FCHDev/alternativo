@@ -14,7 +14,7 @@ const Nous = () => {
                         </h1>
                         <p className="mb-8 leading-relaxed paragraphe lg:text-xl">
                             Alternativo est un cabinet de conseil en investissements et en gestion de patrimoine créée en 2019 à Bordeaux, dans le quartier des Chartrons.
-                            Aujourd’hui nichée au cœur du Pays Basque, cette société familiale a pour but d'accompagner ses clients à faire leurs propres choix financiers en fonction de leurs projets de vie : création ou développement d’un patrimoine, optimisation fiscale.</p>
+                            Aujourd’hui nichée au cœur du Pays Basque, cette société familiale a pour but d'accompagner ses clients à faire leurs propres choix financiers en fonction de leurs projets de vie.</p>
                         <p className="mb-8 leading-relaxed paragraphe lg:text-xl md:block hidden">
                             Chez Alternativo, nous avons à cœur de démocratiser la gestion patrimoniale.
                             C'est la raison pour laquelle nous pratiquons un conseil avisé mais décomplexé.

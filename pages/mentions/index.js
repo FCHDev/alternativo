@@ -24,7 +24,7 @@ export default function Mentions() {
                     <p className="pb-5 2xl:text-xl">
                         Le présent site 'www.alternativo.fr' est la propriété de la société <strong className="font-bold red-dark">ALTERNATIVO</strong>, une société par
                         actions simplifiée au capital de 1 000 euros, immatriculée au Registre du Commerce et des
-                        Sociétés de Bordeaux sous le numéro 878 642 027, dont le siège social est situé 54 route de
+                        Sociétés de Bordeaux sous le numéro 878 462 027, dont le siège social est situé 54 route de
                         Saint-Pée, 64210 Arbonne.
                     </p>
                     <p className="pb-5 2xl:text-xl">
